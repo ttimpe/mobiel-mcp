@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "westfalenfahrplan": {
+      "command": "/Users/timpe/Developer/mobiel-mcp/.venv/bin/python",
+      "args": ["/Users/timpe/Developer/mobiel-mcp/server.py"]
+    }
+  }
+}

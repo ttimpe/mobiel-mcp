@@ -1,0 +1,19 @@
+services:
+  westfalenfahrplan-mcp:
+    build: .
+    environment:
+      MCP_TRANSPORT: sse
+      FASTMCP_HOST: 0.0.0.0
+      FASTMCP_PORT: "8080"
+      VIRTUAL_HOST: mcp.stadtbahn-bielefeld.de
+      VIRTUAL_PORT: "8080"
+      LETSENCRYPT_HOST: mcp.stadtbahn-bielefeld.de
+      LETSENCRYPT_EMAIL: tobias@tim.pe
+    restart: unless-stopped
+    networks:
+      - proxy-nw
+
+networks:
+  proxy-nw:
+    name: proxy-nw
+    external: true
