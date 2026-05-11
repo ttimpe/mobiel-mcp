@@ -2,7 +2,7 @@ services:
   westfalenfahrplan-mcp:
     build: .
     environment:
-      MCP_TRANSPORT: sse
+      MCP_TRANSPORT: streamable-http
       FASTMCP_HOST: 0.0.0.0
       FASTMCP_PORT: "8080"
       VIRTUAL_HOST: mcp.stadtbahn-bielefeld.de

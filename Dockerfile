@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY server.py .
 
-ENV MCP_TRANSPORT=sse
+ENV MCP_TRANSPORT=streamable-http
 ENV FASTMCP_HOST=0.0.0.0
 ENV FASTMCP_PORT=8080
 
